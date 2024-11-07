@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 0;
+}
+
+#logo {
+  width: 50px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  padding: 10px 20px;
+  background-color: rgba(149, 116, 30, 0.6);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.index {
+  background-image: url("../afbeeldingen/achtergrond_homepagina.png"); /* Ik heb hulp van ChatGPT gehad om de afbeelding te selecteren. Ik heb naar mijn doen de gebruikelijke mappenstructuur gebruikt maar het lukte me niet om de afbeelding te vinden. Met hulp van chat kwam ik op het juiste pad terecht*/
+  background-attachment: scroll;
+}
+
+body {
+  background-image: url("../afbeeldingen/achtergrond_algemeen.png");
+  background-attachment: fixed;
+}
+
+.kat {
+  width: 150px;
+  height: auto;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: #edede9;
+  border-radius: 3%;
+  padding: 2vw;
+  max-width: 100%;
+  text-align: center;
+}
+
+.index main {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index section {
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  transform: translate(
+    -20%,
+    -60%
+  ); /* Ik heb hier hulp van chatGPT gehad om de section te posititioneren. Met flexbox kreeg ik het niet op de exacte plaats binnen mijn achtergrond tekening. Vandaar dat ik gebruik heb gemaakt van absolute positionering*/
+  max-width: 400px;
+  text-align: left;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: bisque;
+}
+
+.succes section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 10%;
+  padding-inline: 5%;
+}
+
+.succes section:nth-of-type(2) {
+  flex-direction: row-reverse;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 4%;
+}
